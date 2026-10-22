@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "eBPF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include",
+                "/usr/include/bpf",
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-6.12.101+deb13-amd64/include",
+                "/usr/src/linux-headers-6.12.101+deb13-amd64/arch/x86/include",
+                "/usr/src/linux-headers-6.12.101+deb13-amd64/arch/x86/include/generated",
+                "/usr/src/linux-headers-6.12.101+deb13-common/include",
+                "/usr/src/linux-headers-6.12.101+deb13-common/arch/x86/include"
+            ],
+            "defines": [
+                "__TARGET_ARCH_x86",
+                "__BPF_TRACING__"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "compilerArgs": [
+                "-target", "bpf",
+                "-g", "-O2"
+            ],
+            "cStandard": "gnu11",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

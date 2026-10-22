@@ -27,7 +27,6 @@ compile_commands.json
 # project tool artifacts
 .vagrant/
 .idea
-.vscode
 cscope.files
 cscope.po.out
 cscope.out
